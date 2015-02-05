@@ -1,0 +1,23 @@
+<div class="navbar navbar-default">
+  <form {{action "login" on="submit"}} class="navbar-form navbar-left pull-right">
+    <div class="form-group">
+      {{input value=username type="text" placeholder="User Name (root)" class="form-control"}}
+ 			{{input value=password type="password" placeholder="Password (root)" class="form-control"}}
+ 			{{input value="Login" type="submit" class="btn btn-default"}}
+    </div>
+  </form>
+	{{#if errorMessage}}
+		<div class="nuvbar navbar-left pull-right">
+			<span class="alert alert-danger">
+				{{errorMessage}}
+			</span>
+		</div>
+	{{/if}}
+</div>
+
+
+<div class="row text-center">
+	<img src="reddit.png" alt="Reddit Digest" title="Reddit Digest">
+</div>
+
+{{outlet}}
