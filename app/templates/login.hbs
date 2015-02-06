@@ -1,8 +1,8 @@
 <div class="navbar navbar-default">
   <form {{action "login" on="submit"}} class="navbar-form navbar-left pull-right">
     <div class="form-group">
-      {{input value=username type="text" placeholder="User Name (root)" class="form-control"}}
- 			{{input value=password type="password" placeholder="Password (root)" class="form-control"}}
+      {{input value=username type="text" placeholder="User Name (root)" class="form-control" required="required"}}
+ 			{{input value=password type="password" placeholder="Password (root)" class="form-control" required="required"}}
  			{{input value="Login" type="submit" class="btn btn-default"}}
     </div>
   </form>
